@@ -93,7 +93,7 @@ export default function UltimateDashboard() {
         w_per: weights.per, w_pbv: weights.pbv, w_roe: weights.roe, 
         w_rsi: weights.rsi, w_volume: weights.volume
       };
-      const res = await axios.post('https://zmzari-topsis-stock-system.hf.space/analyze-ultimate', payload);
+      const res = await axios.post('https://zmzari-topsis-stock-system.hf.space/analyze-custom', payload);
       setResults(res.data.data);
       setMeta(res.data);
       setViewMode('portfolio');
